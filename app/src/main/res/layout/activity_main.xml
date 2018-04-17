@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_question"
+    tools:context="com.example.dell.dovuihainao.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@null"
+            android:src="@drawable/icon_smile1"
+            android:layout_width="220dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="200dp" />
+        <Button
+            android:onClick="play"
+            android:text="Chơi ngay"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button"
+            android:layout_width="@dimen/widthbt"
+            android:layout_height="@dimen/heightbt" />
+        <Button
+            android:text="Hướng dẫn"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button"
+            android:layout_width="@dimen/widthbt"
+            android:layout_height="@dimen/heightbt" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <ImageButton
+            android:id="@+id/imgButtonSound"
+            android:onClick="changeSound"
+            android:tag="1"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/sound_on"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

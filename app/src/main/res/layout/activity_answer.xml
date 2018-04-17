@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_question"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/lnBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="tip"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnTip"
+            android:text="Gợi ý"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAbort"
+            android:text="Bỏ qua"
+            android:onClick="abort"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button"
+            android:layout_toRightOf="@id/btnTip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <GridView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:numColumns="6"
+        android:id="@+id/gvAnswer"
+        android:layout_above="@id/lnBtn"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></GridView>
+
+    <GridView
+        android:numColumns="7"
+        android:id="@+id/gvResult"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/gvAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:src="@drawable/imgtoan"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/imgQuestion"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/gvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/imgQuestion"
+        android:background="#c4f0f9"
+        android:gravity="center"
+        android:hint="Câu hỏi"
+        android:textColor="#161515"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="prev"
+        android:id="@+id/imgButtonPrev"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/prev1"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@drawable/title_configuration"
+        android:gravity="center"
+        android:textColor="#d91414"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/imgButtonPrev"
+        android:id="@+id/textViewNumQuestion"
+        android:layout_width="120dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:gravity="right"
+        android:textColor="#ed2529"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textViewScore"
+        android:layout_toRightOf="@id/textViewNumQuestion"
+        android:layout_width="70dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/textViewScore"
+        android:layout_width="50dp"
+        android:src="@drawable/kimcuong"
+        android:layout_height="50dp"
+         />
+
+</RelativeLayout>

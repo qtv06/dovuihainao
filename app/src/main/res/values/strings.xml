@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">dovuihainao</string>
+    <string name="continute">Continute</string>
+    <string name="anphabe">abcdefghigklmnopqrstuvwyz</string>
+    <string-array name="praises">
+        <item>Bạn đúng là thiên tài</item>
+        <item>Đầu óc của bạn thật là siêu nhân</item>
+        <item>Bạn ăn gì mà thông minh vậy</item>
+        <item>Bạn vừa xinh lại còn minh nữa</item>
+        <item>Đúng là não cá vàng</item>
+    </string-array>
+
+    <string name="facebook_app_id">1727607610653206</string>
+    <string name="facebook_login_protocol_scheme">fb1727607610653206</string>
+</resources>
